@@ -4,8 +4,6 @@ deploy_versions/
 .rn_temp/
 node_modules/
 .DS_Store
-/packages/taro-yui-vue-doc/docs/.vuepress/.cache
-/packages/taro-yui-vue-doc/docs/.git
 /packages/taro-yui-vue-doc/yarn.lock
 /packages/taro-yui-vue-doc/yarn-error.log
 /packages/taro-yui-vue-doc/package-lock.json

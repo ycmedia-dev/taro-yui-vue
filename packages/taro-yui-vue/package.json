@@ -19,9 +19,6 @@
 		"build:h5": "npx taro build --type h5",
 		"prod:publish": "npm publish"
 	},
-	"publishConfig": {
-		"registry": "http://doctor.ilefang.io:4783"
-	},
 	"browserslist": [
 		"last 3 versions",
 		"Android >= 4.1",
