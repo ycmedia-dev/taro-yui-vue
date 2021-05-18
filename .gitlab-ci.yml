@@ -1,0 +1,23 @@
+image: node:15.2.1
+
+pages:
+ cache:
+   paths:
+   - node_modules/
+ script:
+ - npm config set registry=https://packages.aliyun.com/5f15014adb0493ecef90a238/npm/npm-registry/
+ - cd packages/taro-yui-vue-demo
+ - echo -e 'registry=http://doctor.ilefang.io:4783/\r\n//doctor.ilefang.io:4783/:_authToken="etNbfWAJtsdlPpaxOZ0FzeXC/nOdbqhyRJYscAvgVRk="' >> .npmrc
+ - npm install
+ - npm run build:h5
+ - cp -r ./dist/* /opt/html/taro-yui-vue-demo
+ 
+ - cd ../taro-yui-vue-doc
+ - echo -e 'registry=http://doctor.ilefang.io:4783/\r\n//doctor.ilefang.io:4783/:_authToken="etNbfWAJtsdlPpaxOZ0FzeXC/nOdbqhyRJYscAvgVRk="' >> .npmrc
+ - npm install
+ - npm run docs:build
+ artifacts:
+   paths:
+   - public
+ only:
+ - master

@@ -1,0 +1,75 @@
+@import "./assets/css/themes.scss";
+@import "./assets/css/common.scss";
+@import "./assets/css/mixins.scss";
+
+.y-section {
+  background: #fff;
+  border-top: 16px solid #f2f4f6;
+  .label {
+    padding: 0 24px;
+    font-size: 32px;
+    font-weight: bold;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: #{"1PX"} solid #f2f4f6;
+    position: relative;
+    padding-left: 24px;
+    color: #000;
+    text-indent: 20px;
+    &:before {
+      margin: 0 24px;
+      transform: translateY(-50%);
+      @include pseudoClass(10px, 40px, 50%, 0, $main-color);
+    }
+    &.require {
+      &::before {
+        background: none;
+        text-indent: 0;
+        content: "*";
+        color: #f56c6c;
+        margin-right: 4px;
+      }
+    }
+    .tip {
+      color: #666;
+    }
+  }
+  &-content {
+    font-size: 28px;
+    padding: 24px;
+  }
+  .r{
+    font-weight: normal;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .y-section {
+    border-top: #{"8PX"} solid #f2f4f6;
+    .label {
+      padding: #{"0 12PX"};
+      font-size: #{"14PX"};
+      height: #{"48PX"};
+      padding-left: #{"12PX"};
+      color: #000;
+      text-indent: #{"10PX"};
+      &:before {
+        margin: #{"0 12PX"};
+        transform: translateY(-50%);
+        @include pseudoClass(#{5px}, #{20px}, 50%, 0, $main-color);
+      }
+      &.require {
+        &::before {
+          margin-right: #{"2PX"};
+        }
+      }
+    }
+    &-content {
+      font-size: #{"12PX"};
+      padding: #{"12PX"};
+    }
+  }
+}

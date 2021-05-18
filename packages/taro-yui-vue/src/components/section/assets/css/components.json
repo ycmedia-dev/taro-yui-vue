@@ -1,0 +1,14 @@
+[
+	{
+		"from": "/assets/css/common.scss",
+		"to": "/"
+	},
+	{
+		"from": "/assets/css/themes.scss",
+		"to": "/"
+	},
+	{
+		"from": "/assets/css/mixins.scss",
+		"to": "/"
+	}
+]

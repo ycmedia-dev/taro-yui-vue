@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "strict":true,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "noImplicitAny": true,
+    "allowSyntheticDefaultImports": true,
+    "outDir": "lib",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strictNullChecks": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "rootDir": ".",
+    "allowJs": false,
+    "resolveJsonModule": true,
+    "types": [
+      "node"
+    ],
+    "typeRoots": [
+      "packages/taro-yui-vue/node_modules/@types",
+      "./global.d.ts"
+    ],
+    "paths": {
+      "@/*": ["packages/taro-yui-vue/src/*"],
+      "@/components/yui/*": ["packages/taro-yui-vue-demo/src/components/yui/*"],
+      "@demo/*": ["packages/taro-yui-vue-demo/src/*"],
+    }
+  },
+  "include": [
+    "packages/global.d.ts",
+    "packages/*/src"
+  ],
+  "exclude": [
+    "node_modules",
+    "./dist"
+  ],
+  "compileOnSave": false
+}

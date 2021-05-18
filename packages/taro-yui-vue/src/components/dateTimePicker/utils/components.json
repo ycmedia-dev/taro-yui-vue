@@ -1,0 +1,10 @@
+[
+	{
+		"from": "/utils/constants.ts",
+		"to": "/"
+	},
+  {
+    "from": "/utils/util.ts",
+    "to": "/"
+  }
+]
