@@ -15,3 +15,5 @@ node_modules/
 /packages/taro-yui-vue/package-lock.json
 /yarn.lock
 /.vscode
+/packages/taro-yui-vue-doc/.npmrc
+/packages/taro-yui-vue-doc/npm
