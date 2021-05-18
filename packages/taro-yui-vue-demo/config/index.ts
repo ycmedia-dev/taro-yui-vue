@@ -3,6 +3,7 @@ import prod from './prod'
 import * as path from 'path'
 const config = {
   projectName: 'taro-ycomponent',
+  outputRoot:'dist/docs',
   date: '2020-12-23',
   designWidth: 750,
   deviceRatio: {
@@ -11,7 +12,6 @@ const config = {
     828: 1.81 / 2
   },
   sourceRoot: 'src',
-  outputRoot: 'dist',
   plugins: [
     ['taro-plugin-copy-component', {
       componentsPath: path.resolve(__dirname, '../node_modules/taro-yui-vue/src/components')
@@ -54,9 +54,10 @@ const config = {
     }
   },
   h5: {
-    publicPath: '/',
+    publicPath: '/taro-yui-vue.demo/',
     router: {
-      mode: "browser"
+      mode: "browser",
+	  basename: '/taro-yui-vue.demo'
     },
     devServer: {
       port: 10086
