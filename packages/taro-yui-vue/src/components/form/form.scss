@@ -11,9 +11,6 @@
     line-height: 104px;
     border-bottom: #{'1PX'} solid $row-border-color;
     vertical-align: top;
-    &:first-child{
-      border-bottom: none;
-    }
 
     .require {
       &::before {

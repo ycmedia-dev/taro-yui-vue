@@ -1,6 +1,6 @@
 {
 	"name": "taro-yui-vue",
-	"version": "1.3.98",
+	"version": "1.3.99",
 	"description": "组件库项目",
 	"workspaces": {
 		"packages": [

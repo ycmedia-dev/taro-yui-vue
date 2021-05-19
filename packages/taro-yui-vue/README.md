@@ -4,3 +4,11 @@
 ## 📖 文档
 
 [https://ycmedia-dev.github.io/taro-yui-vue.io/](https://ycmedia-dev.github.io/taro-yui-vue.io/)
+
+## 安装
+
+```
+yarn add taro-yui-vue
+# OR
+$ npm install taro-yui-vue
+```

@@ -28,7 +28,7 @@
 		"@tarojs/runtime": "3.2.8",
 		"@tarojs/taro": "3.2.8",
 		"taro-plugin-copy-component": "^0.0.3",
-		"taro-yui-vue": "1.3.98",
+		"taro-yui-vue": "1.3.99",
 		"vue": "3.0.11"
 	},
 	"devDependencies": {

@@ -75,7 +75,7 @@ getFileNameList(rootPath, new Map([
       const levelThreeFileNameList = getFileNameList(levelThreePath, new Map([['README.md', '']]))
       const levelThreeSidebar = {
         title: getPathName(levelThreePath),
-        collapsable: true,
+        collapsable: false,
         children: []
       }
       if (hasFolder(levelThreeFileNameList)) {
@@ -104,7 +104,7 @@ getFileNameList(rootPath, new Map([
     })
   }
 })
-
+console.log(sidebar)
 module.exports = {
   dest: 'dist/docs',
   base: '/taro-yui-vue.io/',
@@ -115,12 +115,7 @@ module.exports = {
   description: '一个基于 Vue 的 UI 组件库',
   themeConfig: {
     nav: navList,
-    sidebar: {
-		...sidebar,
-		'/component': [
-        'guide'    /* /about.html */
-      ]
-	}
+    sidebar: sidebar
   },
   plugins: [
     ['fulltext-search'],
